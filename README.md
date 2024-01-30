@@ -19,11 +19,8 @@ kubectl port-forward pod/minio 9000 9090 -n minio-dev<br>
 he command forwards the pod ports 9000 and 9090 to the matching port on the local machine while active in the shell. The kubectl port-forward command only functions while active in the shell session. Terminating the session closes the ports on the local machine.<br>
 
 <h2>4.Connect your Browser to the MinIO Server</h2><br>
-<br>
 Access the MinIO Console by opening a browser on the local machine and navigating to http://127.0.0.1:9001.
-
 Log in to the Console with the credentials minioadmin | minioadmin. These are the default root user credentials.<br>
-
 <h2>5.(Optional) Connect the MinIO Client</h2><br>
 
 If your local machine has mc installed, use the mc alias set command to authenticate and connect to the MinIO deployment:
